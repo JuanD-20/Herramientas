@@ -1,7 +1,7 @@
 
 from Suma import add
 from Resta import subtract
-from operators import multiply
+from Multiplicacion import multiply
 from operators import divide
 from operators import module
 from operators import potencia

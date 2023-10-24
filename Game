@@ -1,10 +1,10 @@
 
 from Suma import add
 from Resta import subtract
-from operators import multiply
-from operators import divide
-from operators import module
-from operators import potencia
+from Multiplicacion import multiply
+from Division import divide
+from Modulo import module
+from Potencia import potencia
 
 def game():
   score = 0

@@ -1,0 +1,71 @@
+
+from operators import add
+from operators import subtract
+from operators import multiply
+from operators import divide
+from operators import module
+from operators import potencia
+
+def game():
+  score = 0
+  while True:
+    print('======== Menu ========'
+    '\n1. Add'
+    '\n2. Subtract'
+    '\n3. multiply'
+    '\n4. Divide'
+    '\n5. Module'
+    '\n6. Potencia'
+    '\n0. Exit')
+    option = int(input('\nChoice an option: '))
+    if option == 0:
+      break
+    num_1 = int(input('Enter first number: '))
+    num_2 = int(input('Enter second number: '))
+    answer = int(input('Enter you answer: '))
+    result = add(num_1, num_2)
+    if option == 1:
+      result = add(num_1, num_2)
+      if result == answer:
+          score += 1
+          print('Correct!!')
+      else:
+          print('Incorrect')
+    elif option == 2:
+      result = subtract(num_1, num_2)
+      if result == answer:
+          score += 1
+          print('Correct!!')
+      else:
+          print('Incorrect')
+    elif option == 3:
+      result = multiply(num_1, num_2)
+      if result == answer:
+          score += 1
+          print('Correct!!')
+      else:
+          print('Incorrect')     
+    elif option == 4:
+      result = divide(num_1, num_2)
+      if result == answer:
+          score += 1
+          print('Correct!!')
+      else:
+          print('Incorrect')
+    elif option == 5:
+      result = module(num_1, num_2)
+      if result == answer:
+          score += 1
+          print('Correct!!')
+      else:
+          print('Incorrect')
+    elif option == 6:
+      result = potencia(num_1, num_2)
+      if result == answer:
+          score += 1
+          print('Correct!!')
+      else:
+          print('Incorrect')
+  print(f'======== Game Over ========'
+  f'\nYou score is {score}''\nKeep going!')
+game()

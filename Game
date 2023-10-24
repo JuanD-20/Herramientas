@@ -1,6 +1,6 @@
 
 from Suma import add
-from operators import subtract
+from Resta import subtract
 from operators import multiply
 from operators import divide
 from operators import module
